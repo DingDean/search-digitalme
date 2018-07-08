@@ -32,7 +32,7 @@ submit.addEventListener('click', function (e) {
   if (input.value === '')
     return console.log('wrong input')
 
-  fetch('http://127.0.0.1:8909/login', {
+  fetch('YOUR_HOST/login', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
