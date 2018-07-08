@@ -7,7 +7,7 @@
     "webRequest",
     "cookies",
     "*://*.google.com/",
-    "YOUR_HOST"
+    "YOUR_HOST/"
   ],
   "background": {
     "scripts": ["background.js"],
