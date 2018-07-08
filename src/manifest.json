@@ -1,0 +1,20 @@
+{
+  "name": "search-digitalme",
+  "version": "1.0",
+  "description": "A really simple extension to relay your chrome browsing activities to your own server",
+  "permissions": [
+    "storage",
+    "webRequest",
+    "cookies",
+    "*://*.google.com/",
+    "YOUR_HOST"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 2
+}
