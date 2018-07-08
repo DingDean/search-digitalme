@@ -9,6 +9,9 @@ if [ -z $HOST ]; then
   exit 1
 fi
 
+## Simple workaround to escape http:// in sed
+HOST_ESCAPED="${HOST//\//\/}"
+
 ## Start fresh everytime
 if [ ! -d "./$BUILD" ];then
   echo "build directory not found, making one now..."
@@ -24,7 +27,7 @@ declare -a FILES=("popup.js" "background.js" "manifest.json")
 for i in "${FILES[@]}"
 do
   echo "substituting $i..."
-  sed -e "s/YOUR_HOST/$HOST/g" "$SRC/$i" > "$BUILD/$i"
+  sed -e "s/YOUR_HOST/$HOST_ESCAPED/g" "$SRC/$i" > "$BUILD/$i"
 done
 
 ## These files just need to be copied
