@@ -3,6 +3,9 @@
 HOST=$1
 SRC="src"
 BUILD="build"
+if [ ! -z $2 ]; then
+  BUILD=$2
+fi
 
 if [ -z $HOST ]; then
   echo "HOST NOT FOUND"

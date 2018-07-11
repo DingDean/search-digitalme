@@ -35,4 +35,4 @@ Just click on the icon on the toolbar and sign in, then the extension would send
 - [X] Bash script to replace host url
 - [ ] The extension assumes too much about the auth on server, need to have an option to no auth at all
 - [ ] Configurable api endpoints
-- [ ] Save bing, baidu searches
+- [X] Save bing, baidu searches

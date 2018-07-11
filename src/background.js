@@ -57,7 +57,11 @@ chrome.webRequest.onBeforeRequest.addListener(
       console.error(e)
     })
   },
-  {urls: ["*://*.google.com/*"]}
+  {urls: [
+    "*://*.google.com/*",
+    "*://*.baidu.com/*",
+    "*://*.bing.com/*",
+  ]}
 )
 
 chrome.runtime.onMessage.addListener(

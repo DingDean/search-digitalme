@@ -7,6 +7,8 @@
     "webRequest",
     "cookies",
     "*://*.google.com/",
+    "*://*.baidu.com/",
+    "*://*.bing.com/",
     "YOUR_HOST/"
   ],
   "background": {
