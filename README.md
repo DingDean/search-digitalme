@@ -26,8 +26,8 @@ Just click on the icon on the toolbar and sign in, then the extension would send
 
 ## Api Endpoints
 
-* `/login`: login with secret
-* `/api/save`: save the search
+* `POST /login`: login with secret
+* `POST /search`: save the search
 
 ## TODO
 

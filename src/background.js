@@ -40,7 +40,7 @@ chrome.webRequest.onBeforeRequest.addListener(
       return callForLogin()
     }
 
-    fetch('YOUR_HOST/api/save', {
+    fetch('YOUR_HOST/search', {
       method: 'POST',
       headers: {
         'Authorization': `bearer ${token}`,

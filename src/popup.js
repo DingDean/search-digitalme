@@ -38,7 +38,7 @@ submit.addEventListener('click', function (e) {
       'Content-Type': 'application/json'
     },
     credentials: 'include',
-    body: JSON.stringify({credential: input.value})
+    body: JSON.stringify({apiToken: input.value})
   }).then((res) => {
     info.innerHTML = 'Login Success'
     res.json()
