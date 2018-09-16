@@ -9,6 +9,7 @@
     "*://*.google.com/",
     "*://*.baidu.com/",
     "*://*.bing.com/",
+    "*://*.duckduckgo.com/",
     "YOUR_HOST/"
   ],
   "background": {

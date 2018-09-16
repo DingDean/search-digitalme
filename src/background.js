@@ -61,6 +61,7 @@ chrome.webRequest.onBeforeRequest.addListener(
     "*://*.google.com/*",
     "*://*.baidu.com/*",
     "*://*.bing.com/*",
+    "*://*.duckduckgo.com/*"
   ]}
 )
 
